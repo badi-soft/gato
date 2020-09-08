@@ -1,0 +1,99 @@
+body{
+  background:url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+}
+
+.contenedor{
+  /*display: inline-block;*/
+  box-shadow: 5px 100px;
+  box-shadow: 10px 10px 10px 10px black;
+  height: 300px;
+  width: 300px;
+  margin-left: auto;
+}
+
+.borde{
+  /*position:;
+  background: ;*/
+  border: 1px solid black;
+  box-sizing: border-box;
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+
+/*#_2{
+  font-size: 90px;
+  text-align: center;
+}*/
+
+#botones, #jugadores{
+  float: left;
+  width: 27%;
+
+  /*background: brown;*/
+  height: 300px;
+}
+
+#botones input{
+  height: 10%;
+  width: 60%;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
+#jugadores label{
+  font-size: 2em;
+}
+
+#selector{
+    background:rgb(255, 230, 0);
+    border-radius: 50%;
+    font-size: 90px;
+    height: 100px;
+    left: 700px;
+    position: absolute;
+    text-align: center;
+    top: 80px;
+    width: 100px;
+}
+
+#selector:hover{
+    transform: scale(1.1);
+    animation-name: background;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes background{
+    100%{
+    background: rgb(251, 255, 0);
+    opacity: 0.8;
+    }
+}
+
+header{
+  text-align: center;
+}
+
+main{
+  background: cornflowerblue;
+  width: 55%;
+  margin: auto;
+}
+  /*
+  #rojo{
+    position:;
+    background: ;
+    height: 100px;
+    width: 100px;
+    float: left;
+  }
+  #azul{
+    position:;
+    top: 40px;
+    left: 30px;
+    background: blue;
+    height: 100px;
+    width: 100px;
+    float: left;
+  }
+  */
