@@ -151,6 +151,7 @@ var cuadro = 0;
 var color = "lightgray";
 var posicionL = 700;
 var posicionT = 80;
+var jugador = "X";
 var cursor = document.querySelector("#selector");
 //--------------------------------------------------------------------------------
 var juego = new UI(cuadro,color,posicionL,posicionT,cursor);
@@ -182,7 +183,9 @@ document.addEventListener("keydown", function(e){
         juego.moverCursorArriba();
     }
     else if ((letra == "Enter")){//Enter
-        juego.HacerMarca("X");
-        juego.existeGanador("X");
+        juego.HacerMarca(jugador);
+        juego.existeGanador(jugador);
+        jugador = (jugador == "X")?"O":"X";
+        juego.cursor.innerHTML = jugador;
     }
 });
